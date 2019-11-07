@@ -68,7 +68,7 @@ public class DAOJSON implements SzereploDAO {
     public Collection<Szereplo> readAllSzereplo() {
         Collection<Szereplo> result = new ArrayList<Szereplo>();
         try {
-            mapper.readValue(jsonFile, new TypeReference<ArrayList<Szereplo>>(){});
+            result = mapper.readValue(jsonFile, new TypeReference<ArrayList<Szereplo>>(){});
         } catch (IOException e) {
             e.printStackTrace();
         }

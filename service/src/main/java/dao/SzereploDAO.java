@@ -10,6 +10,6 @@ public interface SzereploDAO {
     public void createSzereplo(Szereplo szereplo);
     public Collection<Szereplo> readAllSzereplo();
     public void updateSzereplo(Szereplo szereplo);
-    public void deleteSzereplo(Szereplo szereplo);
+    public void deleteSzereplo(Szereplo szereplo) throws NoMatchingId;
     public Szereplo readSzereplo(UUID id) throws NoMatchingId;
 }
